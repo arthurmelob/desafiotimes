@@ -1,0 +1,228 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.containerHeader{
+	width: 100%;
+	background-color: #4B0082;
+	display: flex;
+	justify-content: center;
+}
+	a{	
+		font-family: courier;
+		font-size: 2em;
+		font-weight: bold;
+		color: #DCDCDC;
+		text-decoration: none;
+	}
+	a:hover{
+		transform: scale(1.1);
+		color: black;
+	}
+	.containerHeader__nav{
+		width: 600px;
+		height: 50px;
+		margin: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+@media (max-width: 1024px) {
+	a{
+		font-size: 1em;
+		font-weight: bold;
+	}
+	.containerHeader{
+		padding: 0;
+		margin: 0;
+	}
+	.containerHeader__nav{
+		max-width: 100%;
+		height: 100px;
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+/* main */
+.containerVasco{
+	width: 100%;
+	min-height: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.containerVasco h2,p{
+	color: #DCDCDC;
+}
+.containerVasco__raffle{
+	width: 100vw;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.containerVasco__raffle-title{
+	font-size: 1.5em;
+	color: #DCDCDC;
+	font-family: courier;
+}
+.containerVasco__raffle-signup{
+	border: 0;
+}
+.containerVasco__raffle-signup legend,label{
+	color: #DCDCDC;
+	font-size: 30px;
+}
+.containerVasco__raffle-signup legend{
+	text-align: center;
+	font-size: 1.5em;
+}
+.containerVasco__team{
+	width: 600px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.containerVasco__team-title{
+	font-size: 4em;
+}
+.containerVasco__tshield, .containerVasco__tsponsor{
+	width: 300px;
+	height: 300px;
+}
+.containerVasco__video{
+	width: 750px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 15px;
+}
+.containerVasco__video-title{
+	font-size: 3em;
+	width: 100%;
+}
+.containerVasco__video p{
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+.containerPalmeiras{
+	width: 100%;
+	max-height: 100%;
+	background-color: #228B22;
+}
+.containerPalmeiras__team{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.containerPalmeiras__team-title{
+	color: #DCDCDC;
+	font-size: 4em;
+	text-align: center;
+	width: 100%;
+}
+.containerPalmeiras__tshield, .containerPalmeiras__tsponsor{
+	width: 300px;
+	height: 300px;
+}
+.containerPalmeiras__cstitles{
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.containerPalmeiras__cstitle ul,li{
+	list-style: none;
+}
+.containerPalmeiras__cstitles li{
+	font-size: 1.5em;
+}
+.containerPalmeiras__cstitles-title{
+	color: #DCDCDC;
+	font-size: 2em;
+}
+.containerPalmeiras__video{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 15px;
+}
+.containerPalmeiras__video-title{
+	width: 100%;
+	font-size: 3em;
+	color: #DCDCDC;
+	text-align: center;
+}
+.containerPalmeiras__video p{
+	font-size: 2em;
+	width: 700px;
+	align-self: center;
+}
+.containerInter{
+	background-color: red;
+}
+.containerInter__team{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.containerInter__team-title{
+	width: 100%;
+	color: #DCDCDC;
+	font-size: 4em;
+	text-align: center;
+}
+.containerInter__tshield, .containerInter__tsponsor{
+	width: 300px;
+	height: 300px;
+}
+.containerInter__table{
+ 	display: flex;
+ 	justify-content: center;
+}
+.containerInter__table table{
+	border-spacing: 65px;
+}
+.containerInter__table th{
+	font-size: 2em;
+	color: #DCDCDC;
+}
+.uniformes{
+	width: 400px;
+	height: 300px;
+}
+.containerInter__video{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 15px;
+}
+.containerInter__video-title{
+	width: 100%;
+	text-align: center;
+	color: #DCDCDC;
+	font-size: 3em;
+}
+.containerInter__video p{
+	font-size: 2em;
+	width: 700px;
+	align-self: center;
+}
