@@ -27,7 +27,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	a{
 		font-size: 1em;
 		font-weight: bold;
@@ -113,7 +113,58 @@
 	font-size: 1.5em;
 	margin: 10px;
 }
-
+/* responsivo vasco */
+@media (max-width: 768px) {
+	.containerVasco__raffle-title{
+		font-size: 0.7em;
+	}
+	.containerVasco legend{
+		font-size: 1em;
+	}
+	.signup_name{
+		margin-top: 5px;
+	}
+	.signup_email{
+		margin-top: 5px;
+	}
+	.signup_tel{
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+	.containerVasco fieldset{
+		margin-top: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+	.containerVasco__team{
+		height: 200px;
+	}
+	.containerVasco__team-title{
+		width: 100%;
+		height: 40px;
+		text-align: center;
+		font-size: 3em;
+	}
+	.containerVasco img{
+		width: 100px;
+		height: 100px;
+	}
+	label{
+		font-size: 0.7em;
+	}
+	input{
+		width: 100px;
+	}
+	button{
+		margin-top: 5px;
+	}
+	.containerVasco__video-title{
+		font-size: 2em;
+	}
+	.containerVasco__video p{
+		font-size: 1em;
+	}
+}
 .containerPalmeiras{
 	width: 100%;
 	max-height: 100%;
@@ -140,9 +191,13 @@
 .containerPalmeiras__cstitles{
 	height: 150px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-around;
+}
+.containerPalmeiras__cstitles ul,ol{
+	height: 100%;
 }
 .containerPalmeiras__cstitle ul,li{
 	list-style: none;
@@ -166,12 +221,48 @@
 	font-size: 3em;
 	color: #DCDCDC;
 	text-align: center;
+	margin: 20px;
 }
 .containerPalmeiras__video p{
 	font-size: 2em;
-	width: 700px;
+	width: 600px;
 	align-self: center;
 }
+/* responsivo palmeiras */
+@media (max-width: 768px) {
+	.containerPalmeiras__team{
+		height: 200px;
+	}
+	.containerPalmeiras__team h2{
+		font-size: 3em;
+	}
+	.containerPalmeiras__team img{
+		width: 100px;
+		height: 100px;
+	}
+	.containerPalmeiras__cstitles ul,ol{
+		height: 90px;
+	}
+	.containerPalmeiras__cstitles{
+		display: flex;
+		height: 200px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.containerPalmeiras__cstitles-title{
+		font-size: 1.2em;
+	}
+	.containerPalmeiras__cstitles li{
+		font-size: 1em;
+	}
+	.containerPalmeiras__video-title{
+		font-size: 2em;
+	}
+	.containerPalmeiras__video p{
+		margin-top: 10px;
+		font-size: 1em;
+	}
+} 
 .containerInter{
 	background-color: red;
 }
@@ -198,14 +289,14 @@
  	justify-content: center;
 }
 .containerInter__table table{
-	border-spacing: 65px;
+	border-spacing: 40px;
 }
 .containerInter__table th{
 	font-size: 2em;
 	color: #DCDCDC;
 }
 .uniformes{
-	width: 400px;
+	width: 300px;
 	height: 300px;
 }
 .containerInter__video{
@@ -220,9 +311,116 @@
 	text-align: center;
 	color: #DCDCDC;
 	font-size: 3em;
+	margin: 20px;
 }
 .containerInter__video p{
 	font-size: 2em;
-	width: 700px;
+	width: 600px;
 	align-self: center;
+}
+/* responsivo inter */
+@media (max-width: 768px) {
+	.containerInter__team{
+		height: 150px;
+	}
+	.containerInter__team img{
+		width: 100px;
+		height: 100px;
+	}
+	.containerInter__team-title{
+		font-size: 3em;
+	}
+	.containerInter__table th{
+		font-size: 1em;
+	}
+	.containerInter__table table{
+		border-spacing: 5px;
+		margin: 10px;
+	}
+	.uniformes{
+		width: 100px;
+		height: 100px;
+	}
+	.containerInter__video-title{
+		font-size: 2em;
+		margin: 10px;
+	}
+	.containerInter__video p{
+		font-size: 1em;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	iframe{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+/* footer */
+.containerFooter{
+	width: 100vw;
+	padding: 10px;
+	background-color: #4B0082;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.containerFooter h3{
+	color: #DCDCDC;
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+	margin: 10px;
+}
+.containerFooter__vasco, .containerFooter__palmeiras, .containerFooter__inter{
+	width: 75px;
+	height: 50px
+}
+.containerFooter img{
+	width: 50px;
+	height: 50px;
+}
+
+@media (max-width: 768px){
+	.containerFooter h3{
+		font-size: 1.5em;
+	}
+	.image-hover{
+		display: none;
+	}
+}
+@media (min-width: 768px){
+	.containerFooter__vasco .image-hover{
+		position: absolute;
+		display: none;
+	}
+	.containerFooter__vasco:hover .image-Inn{
+		display: none;
+	}
+	.containerFooter__vasco:hover .image-hover{
+		display: flex;
+	}
+	.containerFooter__palmeiras .image-hover{
+		position: absolute;
+		display: none;
+	}
+	.containerFooter__palmeiras:hover .image-Inn{
+		display: none;
+	}
+	.containerFooter__palmeiras:hover .image-hover{
+		display: flex;
+	}
+	.containerFooter__inter .image-hover{
+		position: absolute;
+		display: none;
+	}
+	.containerFooter__inter:hover .image-Inn{
+		display: none;
+	}
+	.containerFooter__inter:hover .image-hover{
+		display: flex;
+	}
 }
